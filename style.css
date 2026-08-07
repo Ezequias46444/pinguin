@@ -10,7 +10,7 @@ body {
   flex-direction: column; 
   min-height: 100vh; 
   background-color: #f5f2f2; 
-  font-family: sans-serif; /* Altera para a fonte limpa vista no print */
+  font-family: sans-serif; 
 } 
 
 main { 
@@ -37,7 +37,7 @@ main {
   text-decoration: none; 
 } 
 
-/* TÍTULO DO MEIO */
+/* TÍTULO CENTRAL */
 .titulo-principal {
   text-align: center;
   margin-top: 25px;
@@ -51,14 +51,14 @@ main {
   flex-direction: row;     
   flex-wrap: wrap;         
   justify-content: center; 
-  gap: 16px;               /* Espaçamento exato do print */
+  gap: 16px;               
   padding: 20px;       
 } 
 
-/* TAMANHO DO CARD */
+/* ESTRUTURA E ANIMAÇÃO 3D DO CARD */
 .cartao {
   width: 260px;
-  height: 340px; /* Altura aumentada para comportar a imagem vertical e o texto */
+  height: 340px; 
   perspective: 1000px; 
 }
 
@@ -85,8 +85,8 @@ main {
   border-radius: 12px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   backface-visibility: hidden; 
-  background-color: #ffffff; /* Fundo branco do card */
-  overflow: hidden; /* Garante que a imagem não morda a borda arredondada */
+  background-color: #ffffff; 
+  overflow: hidden; 
   display: flex;
   flex-direction: column;
 } 
@@ -95,10 +95,10 @@ main {
   transform: rotateY(180deg); 
 } 
 
-/* IMAGEM E TEXTO DE DENTRO DO CARD */
+/* IMAGEM E TEXTO INTERNOS */
 .cartao-imagem {
   width: 100%;
-  height: 260px; /* Ocupa a maior parte do card verticalmente */
+  height: 260px; 
   object-fit: cover; 
 }
 
@@ -109,5 +109,14 @@ main {
   line-height: 1.4;
   text-align: left;
   background-color: #fff;
-  flex: 1; /* Preenche o espaço inferior restante */
+  flex: 1; 
+}
+
+/* RODAPÉ */
+footer { 
+  background-color: #7e3e1c; 
+  padding: 15px 25px; 
+  color: #fff; 
+  text-align: center; 
+  font-size: 14px;
 }
