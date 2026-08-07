@@ -1,0 +1,9 @@
+/* Atualize o seletor da section no seu estilos.css */
+.cartoes { 
+  display: flex; 
+  flex-direction: row;     /* Mantém os cards lado a lado inicialmente */
+  flex-wrap: wrap;         /* QUEBRA para a linha de baixo se faltar espaço na tela */
+  justify-content: center; /* Centraliza os blocos de cards no meio da página */
+  gap: 20px;               /* Um espaço um pouco maior para o respiro visual */
+  padding: 30px 15px;      /* Afasta os cartões do título e do rodapé */
+} 
